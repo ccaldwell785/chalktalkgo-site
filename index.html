@@ -1,0 +1,26 @@
+I found a significant discrepancy I need to flag before doing anything. The environment referenced in your message doesn't match what's actually here:
+
+- **No memory files exist** — `/app/memory/CURRENT_STATUS.md` and `/app/memory/PRD.md` are both missing (only an empty `test_credentials.md` is present).
+- **"Chalk Talk" doesn't exist in this codebase.** The backend (`server.py`) is the default Hello World stub with only a `/api/status` endpoint. The frontend (`App.js`) is the untouched boilerplate ("Building something incredible ~!"). There are no feedback/results screens, no auth, no account features.
+- **This is a plain React web app** (`react-scripts`), not a React Native/Expo app — so "Ionicons" (a React Native icon set) isn't installed and there are no "screens" in the mobile sense.
+- **Git history has only a single "Initial commit"** — no prior Chalk Talk work was ever committed here.
+
+So there's nothing to "continue" — this pod appears to be a fresh boilerplate, not the Chalk Talk project you've been working on.
+
+Before I do anything, I want to make sure I don't build the wrong thing:
+
+1. This pod is a blank boilerplate with no Chalk Talk code. How would you like to proceed?
+   a. I'm in the wrong pod — stop, I'll reopen the correct Chalk Talk project.
+   b. Build Chalk Talk fresh here from scratch (I'll need you to describe what it is).
+   c. Something else.
+
+2. If I build it here (option 1b), what is Chalk Talk? Briefly:
+   a. A teaching/lesson feedback app (the "feedback/results screens" suggest this)
+   b. A quiz/practice app with results
+   c. Other — please describe
+
+3. Platform target?
+   a. Web app (matches this pod's React setup)
+   b. Mobile app (React Native/Expo — the "Ionicons/screens" language suggests this; would need a different setup)
+
+4. For the 3 items you mentioned — should I still treat Account Deletion, icon polish, and Privacy/ToS URLs as the priorities, or is that moot until the base app exists here?
