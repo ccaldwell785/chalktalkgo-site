@@ -1,26 +1,35 @@
-I found a significant discrepancy I need to flag before doing anything. The environment referenced in your message doesn't match what's actually here:
-
-- **No memory files exist** — `/app/memory/CURRENT_STATUS.md` and `/app/memory/PRD.md` are both missing (only an empty `test_credentials.md` is present).
-- **"Chalk Talk" doesn't exist in this codebase.** The backend (`server.py`) is the default Hello World stub with only a `/api/status` endpoint. The frontend (`App.js`) is the untouched boilerplate ("Building something incredible ~!"). There are no feedback/results screens, no auth, no account features.
-- **This is a plain React web app** (`react-scripts`), not a React Native/Expo app — so "Ionicons" (a React Native icon set) isn't installed and there are no "screens" in the mobile sense.
-- **Git history has only a single "Initial commit"** — no prior Chalk Talk work was ever committed here.
-
-So there's nothing to "continue" — this pod appears to be a fresh boilerplate, not the Chalk Talk project you've been working on.
-
-Before I do anything, I want to make sure I don't build the wrong thing:
-
-1. This pod is a blank boilerplate with no Chalk Talk code. How would you like to proceed?
-   a. I'm in the wrong pod — stop, I'll reopen the correct Chalk Talk project.
-   b. Build Chalk Talk fresh here from scratch (I'll need you to describe what it is).
-   c. Something else.
-
-2. If I build it here (option 1b), what is Chalk Talk? Briefly:
-   a. A teaching/lesson feedback app (the "feedback/results screens" suggest this)
-   b. A quiz/practice app with results
-   c. Other — please describe
-
-3. Platform target?
-   a. Web app (matches this pod's React setup)
-   b. Mobile app (React Native/Expo — the "Ionicons/screens" language suggests this; would need a different setup)
-
-4. For the 3 items you mentioned — should I still treat Account Deletion, icon polish, and Privacy/ToS URLs as the priorities, or is that moot until the base app exists here?
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chalk Talk</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0B162C; color: #fff; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .card { max-width: 520px; text-align: center; }
+  .badge { display: inline-block; padding: 6px 14px; background: #E03C31; color: #fff; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 2px; }
+  h1 { font-size: 44px; margin: 20px 0 8px; font-weight: 800; }
+  p { color: #cbd5e1; line-height: 1.6; font-size: 16px; }
+  .links { margin-top: 32px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  a.btn { display: inline-block; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; letter-spacing: 0.5px; }
+  .primary { background: #E03C31; color: #fff; }
+  .ghost { background: transparent; color: #fff; border: 1.5px solid #334155; }
+  footer { margin-top: 40px; color: #64748b; font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">CHALK TALK</span>
+    <h1>Master the playbook.</h1>
+    <p>Chalk Talk is the mobile coaching app for football teams. Build quizzes, design plays, and communicate with your players &mdash; all in one place.</p>
+    <div class="links">
+      <a class="btn primary" href="/privacy">Privacy Policy</a>
+      <a class="btn ghost" href="/terms">Terms of Service</a>
+      <a class="btn ghost" href="mailto:support@chalktalkgo.com">Contact Support</a>
+    </div>
+    <footer>&copy; 2026 Chalk Talk. All rights reserved.</footer>
+  </div>
+</body>
+</html>
